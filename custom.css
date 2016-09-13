@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400';|Suez+One';
+
+html {
+  background-image: url("background2.jpg");
+  margin: 0px;
+}
+
+h1, h2{
+  margin: 0px;
+}
+
+#main {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+#greeting {
+  font-weight: 200;
+  font-size: 100px;
+}
+
+#name {
+  font-size: 60px;
+  font-weight: 600;
+}
