@@ -2,11 +2,12 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="custom.css">
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="styles/custom.css">
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
   <title>New Tab</title>
+  <script src="js/script.js"></script>
 <head>
-<body>
+<body background="img/background2.jpg">
 <div id="main">
   <div>
     <h1 id="greeting">Good<span id="daytime"> Morning,<span></h1>
@@ -14,4 +15,14 @@
   <div>
     <h2 id="name">Dylan.</h2>
   </div>
-<div>
+  <div id="clockbox"></div>
+  <iframe src="http://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=784267ec0e780a59fcdfefbdde76a894&units=metric&mode=html" style="color:#fff;"><iframe>
+
+</body>
+
+http://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=784267ec0e780a59fcdfefbdde76a894&units=metric
+
+ <!--
+ http://api.openweathermap.org/data/2.5/forecast/city?q=Sydney,au&APPID=784267ec0e780a59fcdfefbdde76a894
+ http://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=784267ec0e780a59fcdfefbdde76a894
+-->
