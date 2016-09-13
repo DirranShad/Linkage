@@ -1,2 +1,7 @@
 # DirranShad.github.io
-New tab webpage
+## A Momentum-esque new tab page.
+
+* Designed to imporve productivity.
+* Easy to reach apps and programs.
+* Nice clean design.
+
