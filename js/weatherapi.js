@@ -4,8 +4,10 @@ $(document).ready(function() {
     $(this).hide("slow");
   });
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=784267ec0e780a59fcdfefbdde76a894&units=metric", function(result){
-    console.log(result);
+$.getJSON("https://api.forecast.io/forecast/02b0de8d458960b9309f89e3a3b73123/-33.865143,151.2099?units=si", function(apiresult){
+    console.log(apiresult);
+    $("#loading").css("display", "none");
+    $('#weather').html('<p id="weathertext">Sydney: ' + apiresult.currently.temperature + '°c </p>');
     });
 
 });

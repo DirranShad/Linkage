@@ -1,10 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400';|Suez+One';
+@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:100,200';
 
 html {
   margin: 0px;
 }
 
-h1, h2{
+h1, h2, p,{
   margin: 0px;
 }
 
@@ -13,12 +13,26 @@ h1, h2{
   margin-top: 28px;
 }
 
-#main {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+#weathertext {
+  margin: 0px;
+  float: right;
+}
+
+#weather {
+  text-align: right;
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+.main {
+  font-family: 'Libre Franklin', sans-serif;
   color: #fff;
-  margin-top: 100px;
   /*text-shadow: 0 0 3px #000000;*/
+}
+
+#content {
+  text-align: center;
+  margin-top: 100px;
 }
 
 #greeting {
@@ -28,5 +42,27 @@ h1, h2{
 
 #name {
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 200;
+}
+
+/*loader*/
+#loading {
+  width: 20px;
+  height: 20px;
+	-webkit-animation:spin 2s linear infinite;
+	-moz-animation:spin 2s linear infinite;
+	animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% {
+	-moz-transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes spin { 100% {
+	-webkit-transform:rotate(360deg);
+	}
+}
+@keyframes spin { 100% {
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg);
+	}
 }
