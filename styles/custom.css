@@ -1,7 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:100,200';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,400,500,600';
 
 html {
   margin: 0px;
+}
+
+body {
+  display: none;
 }
 
 h1, h2, p{
@@ -15,6 +19,7 @@ h1, h2, p{
 
 #weathertext {
   margin: 0px;
+  float: right;
 }
 
 #weather {
@@ -23,8 +28,13 @@ h1, h2, p{
   font-size: 20px;
 }
 
+#credit {
+  text-align: left;
+  font-size: 12px;
+}
+
 .main {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
   /*text-shadow: 0 0 3px #000000;*/
 }
