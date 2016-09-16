@@ -20,18 +20,9 @@ function GetClock(){
     ap=" PM";
     nhour-=12;
   }
-/*  else if((nhour<12)&&(ap==" PM")&&(nhour>6)){
-    $('#daytime').html(" Evening,");
-  }
-  else if((nhour<=6)&&(ap==" PM")){
-    $('#daytime').html(" Afternoon,");
-  }
-  else if(ap==" AM"){
-    $('#daytime').html(" Morning,");
-  }
-*/
-  if(nmin<=9){nmin="0"+nmin;}
 
+  if(nmin<=9){nmin="0"+nmin;}
+  getDayTime();
   $('#clockbox').html(""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nhour+":"+nmin+ap+"");
 }
 
@@ -40,4 +31,17 @@ window.onload=function(){
   setInterval(GetClock,1000);
 }
 
-var sysdate = new Date().toLocaleTimeString()
+function getDayTime() {
+  var sysdate = new Date();
+  var syshour = sysdate.getHours(),ap;
+  console.log("It is the " + syshour + "th hour.")
+  if (syshour<12) {
+    $('#daytime').html(" Morning,");
+  }
+  else if (syshour<18) {
+    $('#daytime').html(" Afternoon,");
+  }
+  else {
+    $('#daytime').html(" Evening,");
+  }
+}
