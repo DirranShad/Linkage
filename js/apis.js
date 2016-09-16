@@ -4,21 +4,44 @@ $(document).ready(function() {
     $(this).hide("slow");
   });
 
+var weatherIcon;
+var currentWeather;
+
 $.ajax({
   url: "https://api.forecast.io/forecast/02b0de8d458960b9309f89e3a3b73123/-33.865143,151.2099?units=si",
   dataType: "jsonp",
   success: function (apiresult) {
       console.log('Weather was successfully retrieved.');
       console.log(apiresult);
-      var weatherIcon = apiresult.currently.icon
-      var currentWeather = apiresult.currently.temperature
-      $("#loading").css("display", "none");
-      $('#credit').before('<p id="weathertext">Sydney: <br> ' + currentWeather + '°c </p>');
-      $('#weathertext').before('<img id="weatherIcon" src="img/' + weatherIcon + '.svg">');
-      $("body").fadeIn(1000);
+      weatherIcon = apiresult.currently.icon
+      currentWeather = apiresult.currently.temperature
+      iconCheck()
+   }
+});
+
+function iconCheck() {
+  if (weatherIcon == "clear-night"){
+    weatherIcon = "clear-day";
+    printWeather()
   }
+  else if (weatherIcon == "partly-cloudy-night"){
+    weatherIcon = "partly-cloudy"
+    printWeather()
+  }
+  else {
+    printWeather()
+  }
+}
+function printWeather(){
+  $('#credit').before('<p id="weathertext">Sydney: <br> ' + currentWeather + '°c </p>');
+  $('#weathertext').before('<img id="weatherIcon" src="img/' + weatherIcon + '.svg">');
+  $("body").fadeIn(1000);
+}
+
+
+
 });
-});
+
 /* A Random Quote Api
 $.ajax( {
      url: '/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
