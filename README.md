@@ -1,7 +1,12 @@
-# DirranShad.github.io
-### A Momentum-esque new tab page.
+# Linkage
+### A Momentum-esque page.
 
-* Designed to improve productivity.
-* Easy to reach apps and programs.
-* Nice clean design.
+####Use it for a homepage, a new tab page - whatever you want.
 
+**Featuring:**
+* A design to improve productivity.
+* Easy to reach web apps with links.
+* A nice clean look and feel.
+* Personalisation (Coming soon)
+
+####Test it out [here!](dirranshad.github.io/Linkage "Linkage")
