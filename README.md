@@ -5,7 +5,7 @@
 
 **Featuring:**
 * A design to improve productivity.
-* Easy to reach web apps with links.
+* Easy to reach web apps with links with Google Search.
 * A nice clean look and feel.
 * Personalisation (Coming soon)
 
