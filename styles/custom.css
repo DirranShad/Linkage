@@ -1,84 +1,64 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,200,400,500,600';
-
 html {
-  margin: 0px;
+    margin: 0px;
 }
 
 body {
-  display: none;
+    display: none;
 }
 
-h1, h2, p{
-  margin: 0px;
+h1, h2, p {
+    margin: 0px;
 }
 
 #clockbox {
-  font-size: 30px;
-  margin-top: 28px;
+    font-size: 30px;
+    margin-top: 28px;
 }
 
 #weathertext {
-  margin: 0px;
-  float: right;
+    margin: 0px;
+    float: right;
 }
 
 #weather {
-  text-align: right;
-  margin-top: 0px;
-  font-size: 20px;
+    text-align: right;
+    margin-top: 0px;
+    font-size: 20px;
 }
 
 #credit {
-  text-align: left;
-  font-size: 12px;
-  float: left;
+    text-align: left;
+    font-size: 12px;
+    float: left;
 }
 
-#weatherIcon{
-  margin-top: -22px;
-  margin-right: -15px;
+#weatherIcon {
+    margin-top: -24px;
+    margin-right: -24px;
+}
+
+#links {
+  bottom:0;
 }
 
 .main {
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-  /*text-shadow: 0 0 3px #000000;*/
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    /*text-shadow: 0 0 3px #000000;*/
 }
 
 #content {
-  text-align: center;
-  margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 #greeting {
-  font-weight: 100;
-  font-size: 100px;
+    font-weight: 100;
+    font-size: 100px;
 }
 
 #name {
-  font-size: 60px;
-  font-weight: 200;
+    font-size: 60px;
+    font-weight: 200;
 }
-
-/*loader - Still Need it?
-#loading {
-  width: 20px;
-  height: 20px;
-	-webkit-animation:spin 2s linear infinite;
-	-moz-animation:spin 2s linear infinite;
-	animation:spin 2s linear infinite;
-}
-@-moz-keyframes spin { 100% {
-	-moz-transform:rotate(360deg);
-	}
-}
-@-webkit-keyframes spin { 100% {
-	-webkit-transform:rotate(360deg);
-	}
-}
-@keyframes spin { 100% {
-	-webkit-transform:rotate(360deg);
-	transform:rotate(360deg);
-	}
-}
-*/
