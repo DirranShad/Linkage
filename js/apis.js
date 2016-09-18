@@ -39,7 +39,7 @@ $(document).ready(function() {
     }
 
     function getQuote() {
-      $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
+      $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
         $(".quote").append(a[0].content + "<p>— " + a[0].title + "</p>")
       });
       $("body").fadeIn(1000);
