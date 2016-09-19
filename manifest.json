@@ -12,5 +12,5 @@
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://api.forecast.io;  object-src 'self';",
     "permissions": [
         "unlimitedStorage"
-    ],
+    ]
 }
