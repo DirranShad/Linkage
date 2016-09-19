@@ -1,0 +1,30 @@
+CACHE MANIFEST
+# 19/09/2016 v0.8
+/index.html
+js/personalisation.js
+js/timescript.js
+styles/custom.css
+
+NETWORK:
+js/apis.js
+
+FALLBACK:
+/html/ /offline.html
+
+CACHE: #Caching random backgrounds and pictures.
+img/background1.png
+img/background2.png
+img/background3.png
+img/background4.png
+img/background5.png
+img/background6.png
+img/background7.png
+img/background8.png
+img/clear-day.svg
+img/cloudy.svg
+img/fog.svg
+img/partly-cloudy-day.svg
+img/rain.svg
+img/wind.svg
+img/drive.png
+icon_128.png

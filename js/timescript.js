@@ -36,9 +36,7 @@ window.onload = function() {
 
 function getDayTime() {
     var sysdate = new Date();
-    var syshour = sysdate.getHours(),
-        ap;
-    console.log("It is the " + syshour + "th hour.")
+    var syshour = sysdate.getHours(),ap;
     if (syshour < 12) {
         $('#daytime').html(" Morning,");
     } else if (syshour < 18) {

@@ -1,6 +1,6 @@
 {
     "name": "Linkage",
-    "description": "A new tab page which improves productivity with easy to reach web-apps, links, Google Search, weather and an optional Quote.",
+    "description": "A personalised new tab page which improves productivity with easy to reach web-apps, links, Google Search, weather and an optional quote.",
     "version": "0.8",
     "manifest_version": 2,
     "icons": {
@@ -9,5 +9,8 @@
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
-    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://api.forecast.io;  object-src 'self';",
+    "permissions": [
+        "unlimitedStorage"
+    ],
 }
