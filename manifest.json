@@ -4,7 +4,7 @@
     "version": "0.8",
     "manifest_version": 2,
     "icons": {
-        "128": "icon_128.png"
+        "128": "img/icon_128.png"
     },
     "chrome_url_overrides": {
         "newtab": "index.html"

@@ -28,9 +28,8 @@ $(document).ready(function() {
             printWeather()
         } else {
             printWeather()
-        }
-        if (weatherIcon == "partly-cloudy-day") {
-          $('#weatherIcon').css({'margin-top': '-20px', 'margin-right': '-19px'})
+        } if (weatherIcon == "partly-cloudy-day") {
+            $('#weatherIcon').css({'margin-top': '-20px', 'margin-right': '-19px'})
         }
     }
 

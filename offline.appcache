@@ -9,7 +9,7 @@ NETWORK:
 js/apis.js
 
 FALLBACK: #My fallback html page
-/html/ /offline.html
+/html/ /more_pages/offline.html
 
 CACHE: #Caching random backgrounds and pictures.
 img/background1.png
