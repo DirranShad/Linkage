@@ -39,7 +39,7 @@ h1, h2, p {
 }
 
 #links {
-  bottom:0;
+    bottom: 0;
 }
 
 .main {
@@ -61,4 +61,26 @@ h1, h2, p {
 #name {
     font-size: 60px;
     font-weight: 200;
+}
+
+#search {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    outline: none;
+    height: 30px;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    text-align: center;
+}
+
+#searchline {
+    color: white;
+    margin-top: -8px;
+    width: 729px;
+}
+
+#search:focus {
+    height: 50px;
+    font-size: 16px;
 }
