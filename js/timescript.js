@@ -1,5 +1,6 @@
 var tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+var secondcount = 0
 
 function GetClock() {
     var d = new Date();
@@ -7,8 +8,9 @@ function GetClock() {
         nmonth = d.getMonth(),
         ndate = d.getDate();
     var nhour = d.getHours(),
-        nmin = d.getMinutes(),
-        ap;
+        nmin = d.getMinutes(),ap;
+
+    secondcount = secondcount + 1;
 
     if (nhour == 0) {
         ap = " AM";
@@ -22,9 +24,12 @@ function GetClock() {
         nhour -= 12;
     }
 
-    if (nmin <= 9) {
-        nmin = "0" + nmin;
+    if (nmin <= 9) {nmin = "0" + nmin;}
+
+    if (secondcount == 3) {
+      $("body").fadeIn(900);
     }
+
     getDayTime();
     $('#clockbox').html("" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nhour + ":" + nmin + ap + "");
 }

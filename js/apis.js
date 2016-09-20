@@ -24,17 +24,20 @@ $(document).ready(function() {
             weatherIcon = "clear-day";
             printWeather()
         } else if (weatherIcon == "partly-cloudy-night") {
-            weatherIcon = "partly-cloudy"
+            weatherIcon = "partly-cloudy-day"
             printWeather()
         } else {
             printWeather()
+        }
+        if (weatherIcon == "partly-cloudy-day") {
+          $('#weatherIcon').css({'margin-top': '-20px', 'margin-right': '-19px'})
         }
     }
 
     function printWeather() {
         $('#credit').before('<p id="weathertext">Sydney: <br> ' + currentWeather + '°c </p>');
         $('#weathertext').before('<img id="weatherIcon" src="img/' + weatherIcon + '.svg">');
-        //$("body").fadeIn(900);
+        $("body").fadeIn(900);
         getQuote()
     }
 
@@ -42,7 +45,7 @@ $(document).ready(function() {
       $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
         $(".quote").append(a[0].content + "<p>— " + a[0].title + "</p>")
       });
-      $("body").fadeIn(1000);
+      //$("body").fadeIn(900);
     }
 
     /*function getQuote() {
@@ -53,11 +56,11 @@ $(document).ready(function() {
                 console.log('Your quote was successfully retrieved.');
                 console.log(quote);
                 $(".quote").append(a[0].content + "<p>— " + a[0].title + "</p>")
-                $("body").fadeIn(1000);
+                $("body").fadeIn(900);
             }
             /*error: function(error) {
                 console.log('error');
-                $("body").fadeIn(1000);
+                $("body").fadeIn(900);
             }
         });
     }*/

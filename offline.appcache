@@ -8,7 +8,7 @@ styles/custom.css
 NETWORK:
 js/apis.js
 
-FALLBACK:
+FALLBACK: #My fallback html page
 /html/ /offline.html
 
 CACHE: #Caching random backgrounds and pictures.
