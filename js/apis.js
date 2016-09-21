@@ -17,11 +17,11 @@ $(document).ready(function() {
                         currentWeather = apiresult.currently.temperature
                         iconCheck()
                     }
-                    error: function(statusCode, errorThrown) {
+                    /*error: function(statusCode, errorThrown) {
                         if (statusCode.status == 0) {
                             alert("you're offline");
                         }
-                        /*error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        error: function(XMLHttpRequest, textStatus, errorThrown) {
                           if ((XMLHttpRequest.readyState == 4)||(XMLHttpRequest.readyState == 0)) {
                             $('#weatherIcon').css('float', '');
                             $("body").fadeIn(900);
