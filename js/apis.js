@@ -3,10 +3,11 @@ $(document).ready(function() {
                 event.preventDefault();
                 $(this).hide("slow");
             });
-
+        //if internet is available, get jsonp
+        //if not, go to float none and showo weather unavailable.
             var weatherIcon, currentWeather;
 
-
+            //With the api, have it so if day
             $.ajax({
                     url: "https://api.forecast.io/forecast/02b0de8d458960b9309f89e3a3b73123/-33.865143,151.2099?units=si",
                     dataType: "jsonp",
