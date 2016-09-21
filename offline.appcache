@@ -13,14 +13,14 @@ FALLBACK: #My fallback html page
 /html/ /more_pages/offline.html
 
 CACHE: #Caching random backgrounds and pictures.
-img/background1.png
-img/background2.png
-img/background3.png
-img/background4.png
-img/background5.png
-img/background6.png
-img/background7.png
-img/background8.png
+img/background1.jpg
+img/background2.jpg
+img/background3.jpg
+img/background4.jpg
+img/background5.jpg
+img/background6.jpg
+img/background7.jpg
+img/background8.jpg
 img/clear-day.svg
 img/cloudy.svg
 img/fog.svg
@@ -29,3 +29,11 @@ img/rain.svg
 img/wind.svg
 img/drive.png
 img/icon_128.png
+img/search.png
+img/favicon.ico
+styles/fonts/raleway-v11-latin-300.woff2
+styles/fonts/raleway-v11-latin-100.woff2
+styles/fonts/raleway-v11-latin-200.woff2
+styles/fonts/raleway-v11-latin-300.woff
+styles/fonts/raleway-v11-latin-100.woff
+styles/fonts/raleway-v11-latin-200.woff
