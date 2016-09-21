@@ -8,7 +8,8 @@ function GetClock() {
         nmonth = d.getMonth(),
         ndate = d.getDate();
     var nhour = d.getHours(),
-        nmin = d.getMinutes(),ap;
+        nmin = d.getMinutes(),
+        ap;
 
     secondcount = secondcount + 1;
 
@@ -24,10 +25,12 @@ function GetClock() {
         nhour -= 12;
     }
 
-    if (nmin <= 9) {nmin = "0" + nmin;}
+    if (nmin <= 9) {
+        nmin = "0" + nmin;
+    }
 
     if (secondcount == 3) {
-      $("body").fadeIn(900);
+        //$("body").fadeIn(900);
     }
 
     getDayTime();
@@ -41,7 +44,8 @@ window.onload = function() {
 
 function getDayTime() {
     var sysdate = new Date();
-    var syshour = sysdate.getHours(),ap;
+    var syshour = sysdate.getHours(),
+        ap;
     if (syshour < 12) {
         $('#daytime').html(" Morning,");
     } else if (syshour < 18) {
