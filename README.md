@@ -1,5 +1,5 @@
 # Linkage
-### A Momentum-esque page.
+### A Momentum-esque page - This is the Google Chrome Extension branch.
 
 ####Use it for a homepage, a new tab page - whatever you want.
 
