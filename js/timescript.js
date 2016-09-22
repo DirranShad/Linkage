@@ -10,9 +10,8 @@ function GetClock() {
     var nhour = d.getHours(),
         nmin = d.getMinutes(),
         ap;
-
     secondcount = secondcount + 1;
-
+    //if (secondcount == 3) {$("body").fadeIn(900);}
     if (nhour == 0) {
         ap = " AM";
         nhour = 12;
@@ -28,11 +27,6 @@ function GetClock() {
     if (nmin <= 9) {
         nmin = "0" + nmin;
     }
-
-    if (secondcount == 3) {
-        //$("body").fadeIn(900);
-    }
-
     getDayTime();
     $('#clockbox').html("" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nhour + ":" + nmin + ap + "");
 }
