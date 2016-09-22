@@ -1,37 +1,34 @@
 $(document).ready(function() {
-            $('a').click(function(event) {
-                event.preventDefault();
-                $(this).hide("slow");
+  $('a').click(function(event) {
+    event.preventDefault();
+    $(this).hide("slow");
             });
         //if internet is available, get jsonp
         //if not, go to float none and showo weather unavailable.
-            var weatherIcon, currentWeather;
+        var weatherIcon, currentWeather;
+        if (navigator.onLine) {
+          getWeather();
+        } else {
+          $('#weatherIcon').css('float', 'none');
+          $('#credit').css('float', 'none');
+          $('#message').css('margin-top', '75px');
+          $("body").fadeIn(900);
+        }
 
-            //With the api, have it so if day
+        function getWeather(){
+          if () {}
             $.ajax({
-                    url: "https://api.forecast.io/forecast/02b0de8d458960b9309f89e3a3b73123/-33.865143,151.2099?units=si",
-                    dataType: "jsonp",
-                    success: function(apiresult) {
-                        console.log('Weather was successfully retrieved.');
-                        console.log(apiresult);
-                        weatherIcon = apiresult.currently.icon
-                        currentWeather = apiresult.currently.temperature
-                        iconCheck()
-                    }
-                    /*error: function(statusCode, errorThrown) {
-                        if (statusCode.status == 0) {
-                            alert("you're offline");
-                        }
-                        error: function(XMLHttpRequest, textStatus, errorThrown) {
-                          if ((XMLHttpRequest.readyState == 4)||(XMLHttpRequest.readyState == 0)) {
-                            $('#weatherIcon').css('float', '');
-                            $("body").fadeIn(900);
-                            getQuote()
-                          }
-                        }*/
-
-                    });
-
+                url: "https://api.darksky.net/forecast/02b0de8d458960b9309f89e3a3b73123/-33.865143,151.2099?units=si&exclude=minutely,hourly,alerts,flags",
+                dataType: "jsonp",
+                success: function(apiresult) {
+                    console.log('Weather was successfully retrieved.');
+                    console.log(apiresult);
+                    weatherIcon = apiresult.currently.icon
+                    currentWeather = apiresult.currently.temperature
+                    iconCheck()
+               }
+            });
+        }
                 function iconCheck() {
                     if (weatherIcon == "clear-night") {
                         weatherIcon = "clear-day";
