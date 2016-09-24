@@ -9,4 +9,4 @@
 * A nice clean look and feel.
 * Personalisation (Coming soon)
 
-####Test it out [here!](dirranshad.github.io/Linkage "Linkage")
+####Test it out [here!](http://dirranshad.github.io/Linkage "Linkage")
