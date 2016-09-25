@@ -1,1 +1,3 @@
-// A script were personalisation options will be made.
+$(document).ready(function() {
+  $("body").fadeIn(500);
+});

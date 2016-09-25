@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkage</title>
+    <link href="../styles/square/orange.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/custom.css">
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/icheck.min.js"></script>
+    <script src="../js/timescript.js"></script>
+    <script src="../js/personalisation.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square-orange',
+                radioClass: 'iradio_square-orange'
+            });
+        });
+    </script>
+</head>
+
+<body background="../img/background7.jpg">
+    <div id="title">
+        <h1>First Time Personalisation:</h1>
+        <h2>You may later change these options in Settings</h2>
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="radio" name="iCheck">
+        <input type="radio" name="iCheck" checked>
+    </div>
+    <div id="footerclock"></div>
+</body>
+
+</html>

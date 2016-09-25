@@ -1,5 +1,28 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+  if (localStorage.getItem("personname") === null) {
+    window.location = '../more_pages/personalisation.html';
+  } else {
+      var personname = localStorage.getItem("personname");
+      var quotesetting = localStorage.getItem("quotesetting")
+      var weathersetting = localStorage.getItem("weathersetting")
+      var background = localStorage.getItem("background")
+      $('#name').html(personname);
+      $('body').css('background-image', 'url(../img/' + background + '.jpg)');
+      if (quotesetting == true) {
+        //display quote
+      } else {
+          //dont display quote
+      } if (weathersetting == true) {
+          //do cached weather
+      } else {
+          getWeather()
+      }
+  }
+});
+
+function checkConnection(){
     var weatherIcon, currentWeather;
+    var d = new Date();
     if (navigator.onLine) {
         getWeather();
     } else {
@@ -8,10 +31,10 @@ $( document ).ready(function() {
         $('#message').css('margin-top', '75px');
         $("body").fadeIn(900);
     }
-});
+}
 
 function getWeather() {
-    ///if () {}
+    //if () {}
     $.ajax({
         url: "https://api.darksky.net/forecast/02b0de8d458960b9309f89e3a3b73123/-33.865143,151.2099?units=si&exclude=minutely,hourly,alerts,flags",
         dataType: "jsonp",
@@ -51,25 +74,12 @@ function printWeather() {
 }
 
 function getQuote() {
-    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
-        $(".quote").append(a[0].content + "<p>— " + a[0].title + "</p>")
-    });
-    //$("body").fadeIn(900);
-}
-
-/*function getQuote() {
     $.ajax({
-        url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=quote'
-        dataType: 'jsonp',
+        url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=",
+        dataType: "jsonp",
         success: function(quote) {
-            console.log('Your quote was successfully retrieved.');
+            console.log('Quote was successfully retrieved.');
             console.log(quote);
-            $(".quote").append(a[0].content + "<p>— " + a[0].title + "</p>")
-            $("body").fadeIn(900);
-        }
-        /*error: function(error) {
-            console.log('error');
-            $("body").fadeIn(900);
         }
     });
-}*/
+}

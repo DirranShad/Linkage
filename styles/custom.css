@@ -111,9 +111,12 @@ h1, h2, p {
     margin-left: -27%;
 }
 
-#searchline {
+.inputline {
     color: white;
     margin-top: -8px;
+}
+
+#searchline {
     width: 550px;
 }
 
@@ -142,4 +145,11 @@ h1, h2, p {
 
 #fullsearch {
   margin-top: 5%;
+}
+
+#title {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Raleway';
+  font-weight: 100;
 }
