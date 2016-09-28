@@ -1,5 +1,5 @@
 # Linkage 
-### A Momentum-esque page. 
+### A Momentum-esque page. - This branch is no longer being developed, click [here](https://github.com/DirranShad/Linkage/tree/chromeex#linkage) for a supported branch.
 ####Use it for a homepage, a new tab page - whatever you want. 
 
 **Featuring:** 
