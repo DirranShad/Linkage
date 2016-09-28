@@ -9,7 +9,7 @@
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
-    "content_security_policy": "script-src 'self' https://fonts.googleapis.com https://ajax.googleapis.com https://api.darksky.net https://quotesondesign.com 'sha256-JjjcsNeayuD+/mxFjUw7ZL0iDeR4VCyr859E54U02n8=';  object-src 'self';",
+    "content_security_policy": "script-src 'self' https://fonts.googleapis.com https://ajax.googleapis.com https://api.darksky.net https://quotesondesign.com 'sha256-1K9syOfaf4usg7eWANbCaSxdxCPz9AXeUw843+l7phA=';  object-src 'self';",
     "permissions": [
         "unlimitedStorage"
     ]

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkage</title>
-    <link href="../styles/square/orange.css" rel="stylesheet">
+    <link href="../styles/square/grey.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/custom.css">
     <script src="../js/jquery-3.1.0.min.js"></script>
     <script src="../js/icheck.min.js"></script>
@@ -14,8 +14,8 @@
     <script>
         $(document).ready(function() {
             $('input').iCheck({
-                checkboxClass: 'icheckbox_square-orange',
-                radioClass: 'iradio_square-orange'
+              checkboxClass: 'icheckbox_minimal-grey',
+              radioClass: 'iradio_minimal-grey',
             });
         });
     </script>
@@ -23,12 +23,15 @@
 
 <body background="../img/background7.jpg">
     <div id="title">
-        <h1>First Time Personalisation:</h1>
-        <h2>You may later change these options in Settings</h2>
-        <input type="checkbox">
-        <input type="checkbox" checked>
-        <input type="radio" name="iCheck">
-        <input type="radio" name="iCheck" checked>
+        <h1 class="greeting">Good <span id="daytime"> Day,</span> </h1>
+        <h2 class="name" style="font-size:40px;">Just a few details, to make Linkage yours.</h2>
+        <br><h2 class="name" style="font-size:27px;">What is your name?</h2>
+        <input type="text" name="q" size="100" value="" placeholder="Name..." class="search nomargin" autocomplete="off">
+        <hr class="inputline">
+        <br><h2 class="name" style="font-size:27px;">Would you like quotes?</h2>
+        <input type="radio" name="iCheck" checked><p>Yes</p>
+        <input type="radio" name="iCheck"><p>No</p>
+        <button class="myButton" id="submit">Submit</button> <!--href="#" class="myButton">Submit</a>-->
     </div>
     <div id="footerclock"></div>
 </body>

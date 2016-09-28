@@ -1,38 +1,48 @@
 /* raleway-100 - latin */
+
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Raleway Thin'), local('Raleway-Thin'),
-       url('fonts/raleway-v11-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/raleway-v11-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Raleway Thin'), local('Raleway-Thin'), url('fonts/raleway-v11-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/raleway-v11-latin-100.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+
 /* raleway-200 - latin */
+
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'),
-       url('fonts/raleway-v11-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/raleway-v11-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url('fonts/raleway-v11-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/raleway-v11-latin-200.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+
 /* raleway-300 - latin */
+
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'),
-       url('fonts/raleway-v11-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/raleway-v11-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url('fonts/raleway-v11-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/raleway-v11-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+
 /* raleway-regular - latin */
+
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'),
-       url('fonts/raleway-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/raleway-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url('fonts/raleway-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/raleway-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
@@ -78,7 +88,7 @@ h1, h2, p {
     bottom: 0;
 }
 
-.main, ::-webkit-input-placeholder  {
+.main, ::-webkit-input-placeholder {
     color: #fff;
     font-family: 'Raleway';
     font-weight: 300;
@@ -88,17 +98,17 @@ h1, h2, p {
     text-align: center;
 }
 
-#greeting {
+.greeting {
     font-weight: 100;
     font-size: 100px;
 }
 
-#name {
+.name {
     font-size: 60px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
-#search {
+.search {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
@@ -114,9 +124,6 @@ h1, h2, p {
 .inputline {
     color: white;
     margin-top: -8px;
-}
-
-#searchline {
     width: 550px;
 }
 
@@ -144,12 +151,43 @@ h1, h2, p {
 }
 
 #fullsearch {
-  margin-top: 5%;
+    margin-top: 5%;
 }
 
 #title {
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Raleway';
-  font-weight: 100;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Raleway';
+    font-weight: 100;
+    color: #fff;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.myButton {
+    background-color: rgba(255, 255, 255, 0);
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 16px 31px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
